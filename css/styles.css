@@ -594,6 +594,10 @@ img {
   margin-right: 70px;
 }
 
+.footer-section-subscribe {
+  margin-right: 93px;
+}
+
 .subscribe-title {
   font-weight: 700;
   font-size: 14px;
@@ -638,6 +642,80 @@ img {
 .subscribe-link:hover,
 .subscribe-link:focus {
   background-color: var(--accent-color);
+}
+
+.newsletter {
+}
+
+.newsletter-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.newsletter-form {
+  display: flex;
+  position: relative;
+}
+
+.newsletter-form-div {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.newsletter-label {
+  margin-left: 16px;
+}
+
+.newsletter-input {
+  background-color: inherit;
+  border-style: none;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.newsletter-btn {
+  text-align: inherit;
+  pad: 10px 30px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  transition: background-color 250ms var(--transition-timing-function);
+}
+
+.newsletter-btn:hover,
+.newsletter-btn:focus {
+  background-color: var(--button-hover);
+}
+
+.newsletter-btn::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: 505px;
+  background-image: url(../images/telegram.svg);
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /*Portfolio*/
