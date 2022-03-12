@@ -612,6 +612,7 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
+  width: 206px;
 }
 
 .subscribe-item {
@@ -644,9 +645,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.newsletter {
-}
-
 .newsletter-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -659,16 +657,25 @@ img {
 }
 
 .newsletter-form {
-  display: flex;
   position: relative;
+  display: flex;
+  margin: 0 auto;
 }
 
-.newsletter-form-div {
+.form-field {
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
+  margin-right: 10px;
+}
+
+.form-input {
+  margin: 0;
+  padding: 15px 15px 15px 70px;
+
+  background-color: inherit;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -676,21 +683,25 @@ img {
   border-radius: 4px;
 }
 
-.newsletter-label {
-  margin-left: 16px;
-}
+.form-label {
+  margin-bottom: 5px;
+  position: absolute;
+  top: 50%;
+  left: 16px;
 
-.newsletter-input {
-  background-color: inherit;
-  border-style: none;
-  margin-left: 15px;
-  margin-right: auto;
+  transform: translateY(-50%);
 }
 
 .newsletter-btn {
   text-align: inherit;
   padding: 10px 30px;
   min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -705,17 +716,13 @@ img {
   background-color: var(--button-hover);
 }
 
-.newsletter-btn::after {
-  display: inline-block;
+.newsletter-icon {
   position: absolute;
-  content: '';
-  top: 12px;
-  left: 505px;
-  background-image: url(../images/telegram.svg);
+  top: 50%;
+  left: 520px;
+  fill: var(--white-color);
 
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  transform: translateY(-50%);
 }
 
 /*Portfolio*/
