@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,7 +259,7 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-} */
+}
 
 .modal-box {
   position: absolute;
