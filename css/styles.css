@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,7 +259,7 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-} */
+}
 
 .modal-box {
   position: absolute;
@@ -436,7 +436,6 @@ img {
 
 .policy-text {
   margin-left: 8px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
@@ -446,10 +445,8 @@ img {
 
 .agreement {
   position: relative;
-  /* text-decoration: underline; */
   text-decoration: none;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
@@ -460,7 +457,7 @@ img {
 .agreement::after {
   position: absolute;
   content: '';
-  top: 14px;
+  top: 14.5px;
   left: 0;
   width: 100%;
   height: 1px;
