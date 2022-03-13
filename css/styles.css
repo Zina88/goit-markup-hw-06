@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,15 +259,15 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-}
+} */
 
 .modal-box {
   position: absolute;
   top: 50%;
   left: 50%;
 
+  padding: 40px;
   min-width: 528px;
-  min-height: 581px;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -280,12 +280,18 @@ img {
 }
 
 .modal-btn {
+  position: absolute;
+  top: 8px;
+  left: 520px;
+
+  transform: translateX(-100%);
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 8px;
-  margin-right: 8px;
+  /* margin-top: 8px;
+  margin-right: 8px; */
   margin-left: auto;
   width: 30px;
   height: 30px;
@@ -400,9 +406,9 @@ img {
 }
 
 .modal-submit {
-  margin-bottom: 30px;
   width: 200px;
   height: 50px;
+  padding: 10px 55px;
 
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
