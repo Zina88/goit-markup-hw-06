@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,7 +259,7 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-}
+} */
 
 .modal-box {
   position: absolute;
@@ -303,6 +303,13 @@ img {
 
 .modal-close {
   fill: #000000;
+
+  transition: fill 250ms var(--transition-timing-function);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
 }
 
 /* modal-form */
@@ -353,6 +360,15 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 10px;
+
+  transition: border-color 250ms var(--transition-timing-function),
+    outline 250ms var(--transition-timing-function);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .modal-icon {
@@ -362,6 +378,13 @@ img {
 
   transform: translateY(-57%);
   fill: var(--title-text-color);
+
+  transition: fill 250ms var(--transition-timing-function);
+}
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 
 .textarea {
@@ -372,6 +395,16 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 20px;
+
+  resize: none;
+  transition: border-color 250ms var(--transition-timing-function),
+    outline 250ms var(--transition-timing-function);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .textarea::placeholder {
@@ -381,6 +414,12 @@ img {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+  transition: color 250ms var(--transition-timing-function);
+}
+
+.textarea:hover::placeholder,
+.textarea:focus::placeholder {
+  color: var(--accent-color);
 }
 
 .modal-policy {
@@ -395,7 +434,7 @@ img {
   pad: 0;
 }
 
-.poplicy-text {
+.policy-text {
   margin-left: 8px;
   font-weight: 400;
   font-size: 14px;
@@ -403,6 +442,29 @@ img {
 
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.agreement {
+  position: relative;
+  /* text-decoration: underline; */
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.agreement::after {
+  position: absolute;
+  content: '';
+  top: 14px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--accent-color);
 }
 
 .modal-submit {
