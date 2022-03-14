@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,7 +259,7 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-}
+} */
 
 .modal-box {
   position: absolute;
@@ -422,6 +422,7 @@ img {
   color: var(--accent-color);
 }
 
+/* Чекбокс */
 .modal-policy {
   display: flex;
   justify-content: center;
@@ -429,13 +430,39 @@ img {
   padding: 0;
 }
 
-.ppolicy-input {
-  margin: 0;
-  pad: 0;
+.policy {
+  display: inline-flex;
+  align-items: center;
+}
+
+.policy-check {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 1.5px solid var(--title-text-color);
+
+  /* background: #2196F3; */
+  border-radius: 2px;
+  transform: scale(0.9);
+
+  transition: transform 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function),
+    border 250ms var(--transition-timing-function);
+}
+
+.policy-input:checked + .policy-check {
+  background-color: #2196f3;
+  border-color: #2196f3;
+
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+
+  background-origin: border-box;
+  transform: scale(1);
 }
 
 .policy-text {
-  margin-left: 8px;
   font-size: 14px;
   line-height: 1.71;
 
