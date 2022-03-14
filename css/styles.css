@@ -251,7 +251,7 @@ img {
     visibility 250ms var(--transition-timing-function);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -259,7 +259,7 @@ img {
 
 .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0);
-} */
+}
 
 .modal-box {
   position: absolute;
@@ -441,20 +441,17 @@ img {
   width: 16px;
   height: 15px;
   border: 1.5px solid var(--title-text-color);
-
-  /* background: #2196F3; */
   border-radius: 2px;
   transform: scale(0.9);
 
   transition: transform 250ms var(--transition-timing-function),
     background-color 250ms var(--transition-timing-function),
-    border 250ms var(--transition-timing-function);
+    border-color 250ms var(--transition-timing-function);
 }
 
 .policy-input:checked + .policy-check {
   background-color: #2196f3;
   border-color: #2196f3;
-
   background-image: url(../images/icon-check.svg);
   background-size: contain;
 
