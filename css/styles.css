@@ -282,9 +282,7 @@ img {
 .modal-btn {
   position: absolute;
   top: 8px;
-  left: 520px;
-
-  transform: translateX(-100%);
+  right: 8px;
 
   display: flex;
   justify-content: center;
@@ -303,6 +301,7 @@ img {
 
 .modal-close {
   fill: #000000;
+  cursor: pointer;
 
   transition: fill 250ms var(--transition-timing-function);
 }
@@ -334,6 +333,7 @@ img {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-label {
@@ -351,23 +351,18 @@ img {
 }
 
 .modal-input {
-  margin: 0;
-
   height: 40px;
   padding: 11px 12px 11px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
 
   transition: border-color 250ms var(--transition-timing-function),
     outline 250ms var(--transition-timing-function);
 }
 
-.modal-input:hover,
 .modal-input:focus,
-.modal-input:hover + .modal-icon,
 .modal-input:focus + .modal-icon {
   fill: var(--accent-color);
   border-color: var(--accent-color);
@@ -376,30 +371,33 @@ img {
 
 .modal-icon {
   position: absolute;
-  top: 57%;
+  top: 50%;
   left: 12px;
 
-  transform: translateY(-57%);
   fill: var(--title-text-color);
 
   transition: fill 250ms var(--transition-timing-function);
 }
 
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .textarea {
   padding: 12px 16px;
   width: 448px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 20px;
 
   resize: none;
   transition: border-color 250ms var(--transition-timing-function),
     outline 250ms var(--transition-timing-function);
 }
 
-.textarea:hover,
 .textarea:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -415,7 +413,6 @@ img {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.textarea:hover::placeholder,
 .textarea:focus::placeholder {
   color: var(--accent-color);
 }
@@ -495,6 +492,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+  cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
@@ -923,6 +921,9 @@ img {
 }
 
 .newsletter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: inherit;
   padding: 10px 30px;
   min-width: 200px;
@@ -947,12 +948,8 @@ img {
 }
 
 .newsletter-icon {
-  position: absolute;
-  top: 50%;
-  left: 520px;
   fill: var(--white-color);
-
-  transform: translateY(-50%);
+  margin-left: 10px;
 }
 
 /*Portfolio*/
